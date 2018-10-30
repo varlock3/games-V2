@@ -365,7 +365,13 @@ message.channel.sendFile(canvas.toBuffer());
 message.channel.sendFile(canvas.toBuffer());
  })
              
-                      message.channel.awaitMessages(filter, { maxMatches: 1, time: 30000, errors: ['time'] })//وقت الاجابة
+                       message.channel.awaitMessages(filter,{
+               thing: true,
+               maxMatches : 1,
+                time : 60000,
+                 maxUses: 1,
+                errors : ['time']
+            })//وقت الاجابة
                       .then((collected) => {
                            var embed = new Discord.RichEmbed()
                             .setDescription(`${collected.first().author} ✅ **احسنت لقد تمكنت من أجابه عن معادله بسرعه**`)
