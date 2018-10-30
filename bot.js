@@ -443,6 +443,8 @@ client.on("message", message => {
    🎮_رياضيات
    🎮_ركب
    🎮*xo
+   🎮*نقاطي
+   🎮*top
 ══════════ஜ۩۞۩ஜ════════════ 
  `)
  .setFooter(`by :@Tarỉq#0004`)
